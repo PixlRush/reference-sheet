@@ -1,0 +1,73 @@
+\documentclass{article}
+
+\def\thetitle{Sanma Reference Sheet}
+
+\input{./includes/preamble.tex}
+
+\def\sentenboucount{9}
+\kiriagemangantrue
+\sanmatrue
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\input{./includes/title.tex}
+
+\input{./includes/tiles.tex}
+
+\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.6\linewidth}\vspace{0pt}
+
+% Score table
+\input{./includes/sanma-scores.tex}
+
+\medskip
+
+% Score table (limit)
+\input{./includes/sanma-scores-limit.tex}
+
+\medskip
+
+% Call procedures
+{\footnotesize%
+  \input{./includes/sanma-call-procedures.tex}
+}
+\end{minipage}\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.38\linewidth}\vspace{0pt}
+% Calls table
+\input{./includes/calls.tex}
+
+\medskip
+
+% Fu table
+\input{./includes/fu.tex}
+
+\bigskip
+
+% Tenbou
+\input{./includes/tenbou.tex}
+\end{minipage}
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{centering}
+%\section*{\textsc{Yaku}}
+
+\input{./includes/yaku-legend.tex}
+
+% Yaku
+\begin{multicols}{2}
+\input{./includes/yaku-situational.tex}
+\input{./includes/yaku-sequences.tex}
+\input{./includes/yaku-suits.tex}
+\input{./includes/yaku-special.tex}
+\input{./includes/yaku-sets.tex}
+\input{./includes/yaku-terminals.tex}
+\input{./includes/yaku-honours.tex}
+\end{multicols}
+\end{centering}
+
+\end{document}

@@ -5,12 +5,16 @@
 \newif\ifkiriagemangan
 \newif\ifkazoeyakuman
 \newif\ifnagashimangan
+\newif\ifsanma
 
 \def\sentenboucount{4}
 \kiriagemanganfalse
 \kazoeyakumantrue
 \nagashimangantrue
+\sanmafalse
 
+\usepackage[inline]{enumitem}
+\usepackage{amssymb}
 \usepackage[margin=1cm,includefoot,footskip=1.5em]{geometry}
 \usepackage{fancyhdr}
 \usepackage[
@@ -43,8 +47,8 @@
 \newcommand\scorepair[2]{\hfill{}#1\ \,$/$\hfill{}#2}
 \newcommand\yaku[6]{\textsc{\large{}#1} / #2\hfill#6\newline{}#3&#4&#5}
 \newenvironment{callprocedure}%
-  {\begin{enumerate}[leftmargin=2pt,itemindent=1pt,itemsep=0pt,labelsep=1ex,topsep=0pt]}%
-  {\end{enumerate}}
+  {\begin{enumerate*}[leftmargin=2pt,itemindent=1pt,itemsep=0pt,labelsep=1ex,topsep=0pt]}%
+  {\end{enumerate*}}
 
 \newcolumntype{S}{@{}>{\centering\arraybackslash}X@{\,\,}}
 \newcolumntype{Y}{>{\large\centering\arraybackslash}m{1.5ex}}
