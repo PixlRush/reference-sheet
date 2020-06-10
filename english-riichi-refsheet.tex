@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\input{./includes/preamble.tex}
+
+\englishtrue
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\input{./includes/title.tex}
+
+\input{./includes/tiles.tex}
+
+\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.6\linewidth}\vspace{0pt}
+
+% Score table
+\input{./includes/scores.tex}
+
+\medskip
+
+% Score table (limit)
+\input{./includes/scores-limit.tex}
+
+\medskip
+
+% Call procedures
+{\footnotesize%
+  \input{./includes/call-procedures.tex}
+}
+\end{minipage}\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.38\linewidth}\vspace{0pt}
+% Calls table
+\input{./includes/calls.tex}
+
+\medskip
+
+% Fu table
+\input{./includes/fu.tex}
+
+\bigskip
+
+% Tenbou
+\input{./includes/tenbou.tex}
+\end{minipage}
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{centering}
+%\section*{\textsc{Yaku}}
+
+\input{./includes/yaku-legend.tex}
+
+% Yaku
+\begin{multicols}{2}
+\input{./includes/yaku.tex}
+\end{multicols}
+\end{centering}
+
+\end{document}
